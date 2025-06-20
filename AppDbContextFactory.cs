@@ -14,7 +14,7 @@ namespace EmployeeApp
         public AppDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseNpgsql("Host=localhost;Database=Hodim_db;Username=postgres;Password=7004");
+            optionsBuilder.UseNpgsql("Host=192.168.1.99;Database=employees_db;Username=postgres;Password=123456aa");
             return new AppDbContext(optionsBuilder.Options);
         }
     }
